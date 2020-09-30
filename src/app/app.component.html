@@ -1,0 +1,119 @@
+<div class="container-fluid-sm" style="background-color: aliceblue;">
+  <div class="row">
+    <div class="col-sm-3 mt-auto">
+      <mat-card class="example-card">
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-header>
+          <mat-card-title style="margin-top: 15%; 
+            font-size: 1.563rem; 
+            font-family: 'Times New Roman', Times, serif;
+            "><b>Kunal Goyal</b></mat-card-title>
+          <mat-card-subtitle class="mt-3" style="color:rgb(252, 178, 42);">Web Developer</mat-card-subtitle>
+        </mat-card-header>
+        <br>
+        <mat-card-content style="margin-left: 2px;">
+          <div class="row onhov" style="height: 1.5rem;">
+            <div class="col-sm-auto">
+              <mat-icon>home</mat-icon>
+            </div>
+            <div class="col-sm-auto">
+              <a routerLink="" style="color:white; text-decoration: none;">
+                <h3>Home</h3>
+              </a>
+            </div>
+          </div>
+          <br>
+          <div class="row onhov" style="height: 1.5rem;">
+            <div class="col-sm-auto">
+              <mat-icon>person</mat-icon>
+            </div>
+            <div class="col-sm-auto">
+              <a routerLink="/about" style="color:white; text-decoration: none;">
+                <h3>About</h3>
+              </a>
+            </div>
+          </div>
+          <br>
+          <div class="row onhov" style="height: 1.5rem;">
+            <div class="col-sm-auto">
+              <mat-icon>school</mat-icon>
+            </div>
+            <div class="col-sm-auto">
+              <a routerLink="/academics" style="color:white; text-decoration: none;">
+                <h3>Academics</h3>
+              </a>
+            </div>
+          </div>
+          <br>
+          <div class="row onhov" style="height: 1.5rem;">
+            <div class="col-sm-auto">
+              <mat-icon>lightbulb</mat-icon>
+            </div>
+            <div class="col-sm-auto">
+              <a routerLink="/skills" style="color:white; text-decoration: none;">
+                <h3>Skills</h3>
+              </a>
+            </div>
+          </div>
+          <br>
+          <div class="row onhov" style="height: 1.5rem;">
+            <div class="col-sm-auto">
+              <mat-icon>widgets</mat-icon>
+            </div>
+            <div class="col-sm-auto">
+              <a routerLink="/work" style="color:white; text-decoration: none;">
+                <h3>Work</h3>
+              </a>
+            </div>
+          </div>
+          <br>
+          <div class="row onhov" style="height: 1.5rem;">
+            <div class="col-sm-auto">
+              <mat-icon>call </mat-icon>
+            </div>
+            <div class="col-sm-auto">
+              <a routerLink="/contact" style="color:white; text-decoration: none;">
+                <h3>Contact</h3>
+              </a>
+            </div>
+          </div>
+        </mat-card-content>
+        <br>
+        <mat-card-actions style="margin-left: 0.25rem;">
+          <div class="row">
+            <div class="col-sm-2">
+              <button onclick="window.open('https://facebook.com/g.kunal01')" mat-mini-fab color="warn">
+                <i class="fa fa-facebook" style="font-size:1.5rem"></i>
+              </button>
+            </div>
+            <div class="col-sm-2">
+              <button onclick="window.open('https://instagram.com/k_u_n_a_l._.01')" mat-mini-fab color="warn">
+                <i class="fa fa-instagram" style="font-size:1.5rem"></i>
+              </button>
+            </div>
+            <div class="col-sm-2">
+              <button onclick="window.open('https://linkedin.com/in/kunal-goyal-a58787191')" mat-mini-fab color="warn">
+                <i class="fa fa-linkedin" style="font-size:1.5rem"></i>
+              </button>
+            </div>
+            <div class="col-sm-2">
+              <button onclick= "window.open('https://twitter.com/KunalGo05588023')" mat-mini-fab color="warn">
+                <i class="fa fa-twitter" style="font-size:1.5rem"></i>
+              </button>
+            </div>
+            <div class="col-sm-2">
+              <button onclick="window.open('https://github.com/kunal-3468')" mat-mini-fab color="warn">
+                <i class="fa fa-github" style="font-size:1.5rem"></i>
+              </button>
+            </div>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="col-sm-9">
+      <div [@triggerName]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

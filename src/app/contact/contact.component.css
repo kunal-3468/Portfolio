@@ -1,0 +1,24 @@
+.example-card1 {
+  max-width: 88%;
+  background-color: white;
+  margin-top: 3.5rem;
+  margin-right: auto;
+  margin-left: 0;
+  height: 90%;
+  border-radius: 1.563rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #d6d6c2;
+  text-align: center ;
+  overflow: scroll;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+.hello{
+  border-bottom: .35rem solid #F44336;
+  border-radius: 2px;
+  margin-left: 2rem; 
+  margin-right: 9rem; 
+}
+.but{
+  border-radius: 1rem;
+  margin-left: 9rem;
+}

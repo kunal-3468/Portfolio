@@ -1,0 +1,16 @@
+.example-card1 {
+    max-width: 55rem;
+    background-color: #3F51B5;
+    color: aliceblue;
+    margin-top: 3.5rem;
+    margin-right: auto;
+    margin-left: 0;
+    height: 36rem;
+    border-radius: 1.563rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #d6d6c2;
+  }
+  .but{
+      border-radius: 1rem;
+  }
+  
+  
